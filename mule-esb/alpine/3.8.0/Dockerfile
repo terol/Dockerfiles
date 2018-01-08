@@ -31,6 +31,6 @@ WORKDIR /opt/mule
 CMD [ "/opt/mule/bin/mule" ]
 
 # Default http port
-EXPOSE 8081
+EXPOSE 8080
 # JMX port.
 EXPOSE 1099
