@@ -1,4 +1,4 @@
-FROM andreptb/oracle-java:8-alpine
+#FROM andreptb/oracle-java:8-alpine
 
 # Define environment variables.
 ENV MULE_HOME /opt/mule
