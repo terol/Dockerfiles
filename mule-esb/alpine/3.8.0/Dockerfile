@@ -22,6 +22,9 @@ RUN apk --no-cache add --virtual build-dependencies wget ca-certificates && \
 # Define mount points.
 VOLUME ["${MULE_HOME}/logs", "${MULE_HOME}/conf", "${MULE_HOME}/apps", "${MULE_HOME}/domains"]
 
+# OepnShift runtime user
+USER 1001
+
 # Define working directory.
 WORKDIR /opt/mule
 
