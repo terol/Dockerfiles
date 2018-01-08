@@ -25,6 +25,9 @@ VOLUME ["${MULE_HOME}/logs", "${MULE_HOME}/conf", "${MULE_HOME}/apps", "${MULE_H
 # OepnShift runtime user
 USER 1001
 
+# copy app to apps folder
+COPY sample-app_new.zip /opt/mule/apps/
+
 # Define working directory.
 WORKDIR /opt/mule
 
